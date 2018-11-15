@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+ /*El titulo del juego que aparece en cada momento en la pantalla,arriba*/
+h1{
+	color:red;
+	text-shadow: 2px 2px 3px #999;
+}
+	/*Titulo que lo uso para ver la palabra en Ganado o Perdido*/
+h3{
+	color:green;
+}
+	/*Contenedor invisible del juego que sirve para poder centrar el contenedor principal*/
+.padre{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+	/*Contenedor principal del juego*/
+.contenedor{
+	border:1px solid;
+	width:70%;
+	padding:20px;
+	text-align:center;
+	border-radius:15px 15px 0px 0px;
+	/*para que centre la siguiente capa*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("../imagenes/fondocapa.jpg");
+	box-shadow: 10px 10px 15px #999;
+	
+}
+	/*el contenedor de ganado o perdido*/
+.contenedor2{
+	border:1px solid;
+	width:70%;
+	padding:20px;
+	text-align:center;
+	border-radius:15px 15px 0px 0px;
+	background-image: url("../imagenes/fondocapa.jpg");
+	box-shadow: 10px 10px 15px #999;
+}
+	/*color verde para la palabra a adivinar*/
+.adiv{
+	color:green;
+	font-size:1.4em;
+}
+	/*color verde para las pistas*/
+.bdiv{
+	color:green;
+	font-size:1em;
+}
+	/*color gris para las palabras ya probadas*/
+.colgris{
+	color:grey;
+}	
+ 	/*Para mostrar las imagenes del juego en la seccion principal y tambien las pistas*/
+.imagenes{
+	margin-left:10px;
+}
+	/*Capa que contiene la informacion del juego*/
+.lft{
+	float:left;
+	width:50%;
+}
+ 	/*Estilo1,2,3,4 personalizado que los uso para los botones, difieren en efecto y colores*/
+ 	/*Pers1- elegir palabra & Elegir dificultad*/
+.pers {
+  color: #318aac !important;
+  font-weight: 200;
+  padding: 5px;
+  background: rgba(0,0,0,0);
+  border: 2px solid;
+  border-color: #318aac;
+  transition: all 1s ease;
+  position: relative;
+}
+.pers:hover {
+  background: #318aac;
+  color: #fff !important;
+}
+	/*Detalles juego, palabra oculta, intentos, letras introducidas...etc*/
+.pers2 {
+  color: #318aac !important;
+  font-weight: 200;
+  padding: 10px;
+  background: rgba(0,0,0,0);
+  border: 2px solid;
+  border-color: #318aac;
+  transition: all 1s ease;
+  position: relative;
+  text-align:left;
+}
+	/*Introduce una letra*/
+.pers3 {
+  color: #318aac !important;
+  font-weight: 200;
+  padding: 5px;
+  background: rgba(0,0,0,0);
+  border: 2px solid;
+  border-color: #318aac;
+  transition: all 1s ease;
+  position: relative;
+  margin-left:50px;
+  margin-right:50px;
+}
+	/*Input letra & Sumbit*/
+.pers4 {
+  color: #ff8040 !important;
+  font-weight: 200;
+  padding: 5px;
+  background: rgba(0,0,0,0);
+  border: 1px solid;
+  border-color: #ff8040;
+  transition: all 1s ease;
+  position: relative;
+}
+.pers4:hover {
+  background: #ff8040;
+  color: #fff !important;
+}
+	/*Para que los enlaces no salgan subrayados*/
+a:link { 
+  text-decoration:none; 
+} 
